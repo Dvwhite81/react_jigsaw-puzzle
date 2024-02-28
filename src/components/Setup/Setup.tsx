@@ -1,8 +1,8 @@
+import { getImgPieces } from '../../utils/imageHelpers';
 import { PuzzleImage } from '../../utils/types';
 import ImageSelect from './ImageSelect';
 import CountSelect from './CountSelect';
 import './Setup.css';
-import { getImgPieces } from '../../utils/imageHelpers';
 
 interface SetupProps {
   selectedImage: PuzzleImage | null;

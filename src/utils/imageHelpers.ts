@@ -1,6 +1,6 @@
-import { PuzzleImage } from "./types";
+import { PuzzleImage } from './types';
 
-const pad = (str: string) => {
+export const pad = (str: string) => {
   while (str.length < 3) {
     str = '0' + str;
   }

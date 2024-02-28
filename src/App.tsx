@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div id="app">
-      {!setupComplete ? (
+      {!setupComplete || !selectedImage ? (
         <Setup
           selectedImage={selectedImage}
           setSelectedImage={setSelectedImage}
@@ -23,7 +23,7 @@ function App() {
           setSetupComplete={setSetupComplete}
         />
       ) : (
-        <Game pieceCount={pieceCount} puzzlePieces={puzzlePieces} />
+        <Game selectedImage={selectedImage} pieceCount={pieceCount} puzzlePieces={puzzlePieces} />
       )}
     </div>
   );

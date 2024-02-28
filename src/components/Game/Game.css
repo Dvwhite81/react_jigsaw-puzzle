@@ -1,7 +1,15 @@
 #game {
   display: flex;
-  flex-direction: column;
   height: 100%;
+}
+
+#board {
+  background-size: contain;
+  border: 1px solid;
+  display: grid;
+  height: var(--board-height);
+  margin: auto;
+  opacity: .3;
 }
 
 #piece-container {
