@@ -1,0 +1,42 @@
+#setup {
+  background-color: blue;
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+  height: 70vh;
+  margin: auto;
+  width: 90vh;
+}
+
+#setup,
+.setup-select {
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.setup-select {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.setup-select-options {
+  display: flex;
+  justify-content: space-around;
+}
+
+.setup-select-option {
+  display: grid;
+}
+
+.thumbnail,
+.piece-count-select-option {
+  cursor: pointer;
+  height: 100px;
+  margin: 0 1rem;
+}
+
+.selected-thumbnail {
+  background-color: gold;
+}

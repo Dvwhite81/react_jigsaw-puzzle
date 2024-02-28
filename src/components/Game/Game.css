@@ -1,0 +1,23 @@
+#game {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#piece-container {
+  margin: auto 0;
+  max-height: 90vh;
+  overflow-y: scroll;
+  padding: 0 0.5rem;
+  width: fit-content;
+}
+
+.piece {
+  display: flex;
+  margin: auto;
+}
+
+.piece-img {
+  height: 90%;
+  margin: auto;
+}

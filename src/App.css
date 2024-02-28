@@ -1,22 +1,15 @@
-.setup-select {
-  align-items: center;
+#app {
+  background-color: lightblue;
   display: flex;
   flex-direction: column;
+  height: 100%;
   width: 100%;
 }
 
-.setup-select-options {
-  display: flex;
-  justify-content: space-around;
-}
-
-.thumbnail,
-.piece-count-select-option {
-  cursor: pointer;
-  height: 100px;
-  margin: 0 1rem;
-}
-
-.selected-thumbnail {
-  border: 5px solid gold;
+button {
+  border: none;
+  border-radius: 10px;
+  font-size: large;
+  padding: 0.3rem 0.6rem;
+  width: fit-content;
 }
