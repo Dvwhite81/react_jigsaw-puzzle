@@ -12,8 +12,14 @@ interface GameProps {
 const Game = ({ selectedImage, pieceCount, puzzlePieces }: GameProps) => {
   return (
     <div id="game">
-      <PieceContainer pieceCount={pieceCount} puzzlePieces={puzzlePieces} />
-      <Board selectedImage={selectedImage} pieceCount={pieceCount}  />
+      <PieceContainer
+        pieceCount={pieceCount}
+        puzzlePieces={puzzlePieces}
+      />
+      <Board
+        selectedImage={selectedImage}
+        pieceCount={pieceCount}
+      />
     </div>
   );
 };

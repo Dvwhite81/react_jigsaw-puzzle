@@ -13,3 +13,8 @@ export interface PuzzlePiece {
   height: number;
   width: number;
 }
+
+export interface CurrentPieceObj {
+  coords: string;
+  imgUrl: string;
+}

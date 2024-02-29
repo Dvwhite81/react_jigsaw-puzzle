@@ -11,6 +11,13 @@ export const getGridCoords = (pieceCount: number) => {
   return coords;
 };
 
+export const getDigits = (url: string) => {
+  const parts = url.split('.');
+  const last = parts[0].slice(-3);
+
+  return last;
+}
+
 export const shufflePieces = (a: PuzzlePiece[]) => {
   for (
     var j, x, i = a.length;
@@ -18,4 +25,12 @@ export const shufflePieces = (a: PuzzlePiece[]) => {
     j = Math.floor(Math.random() * i), x = a[--i], a[i] = a[j], a[j] = x
   );
   return a;
+};
+
+export const removePiece = (digits: string) => {
+  const pieceContainer = document.querySelector('#piece-container-pieces');
+  console.log('pieceContainer:', pieceContainer);
+  const piece = pieceContainer?.querySelector(`#piece-${digits}`);
+  console.log('piece:', piece);
+  piece?.remove();
 }

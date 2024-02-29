@@ -9,7 +9,6 @@
   display: grid;
   height: var(--board-height);
   margin: auto;
-  opacity: .3;
 }
 
 #piece-container {
@@ -22,10 +21,24 @@
 
 .piece {
   display: flex;
-  margin: auto;
+  margin: 0.3rem;
 }
 
-.piece-img {
-  height: 90%;
+#piece-container .piece-img {
+  height: 100%;
   margin: auto;
+  padding: 5%;
+}
+
+#piece-container .piece {
+  cursor: pointer;
+}
+
+.square {
+  background: white;
+  opacity: 0.8;
+}
+
+.piece-img.square-piece-img {
+  height: 100%;
 }
