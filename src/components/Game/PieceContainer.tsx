@@ -1,3 +1,4 @@
+import { shufflePieces } from '../../utils/gameHelpers';
 import Piece from './Piece';
 
 interface PieceContainerProps {
@@ -6,11 +7,11 @@ interface PieceContainerProps {
 }
 
 const PieceContainer = ({ pieceCount, puzzlePieces }: PieceContainerProps) => {
-  console.log('pieces:', puzzlePieces);
+  const shuffledPieces = shufflePieces(puzzlePieces);
   return (
     <div id="piece-container">
       <div id="piece-container-pieces">
-        {puzzlePieces.map((p) => (
+        {shuffledPieces.map((p) => (
           <Piece key={p} pieceCount={pieceCount} puzzlePiece={p} />
         ))}
       </div>

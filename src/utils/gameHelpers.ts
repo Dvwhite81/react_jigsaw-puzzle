@@ -1,4 +1,3 @@
-import { PuzzlePiece } from './types';
 import { pad } from './imageHelpers';
 
 export const getGridCoords = (pieceCount: number) => {
@@ -18,7 +17,7 @@ export const getDigits = (url: string) => {
   return last;
 }
 
-export const shufflePieces = (a: PuzzlePiece[]) => {
+export const shufflePieces = (a: string[]) => {
   for (
     var j, x, i = a.length;
     i;

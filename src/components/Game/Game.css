@@ -13,7 +13,7 @@
 
 #piece-container {
   margin: auto 0;
-  max-height: 90vh;
+  height: 90vh;
   overflow-y: scroll;
   padding: 0 0.5rem;
   width: fit-content;
